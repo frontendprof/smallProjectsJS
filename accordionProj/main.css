@@ -47,3 +47,41 @@
      cursor:pointer;
      position: relative;
  }
+
+
+ .accordion-item-header::after{
+
+     content:"\002B";
+     position: absolute;
+     right:2rem;
+
+ }
+
+ .accordion-item-header.active::after{
+     content:"\2212";
+ }
+
+ 
+ .accordion-item-body{
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height .5s ease-out;
+     
+ }
+
+ .accordion-item-body-content{
+
+    padding:1rem;
+    line-height: 1.5rem;
+    border-top:4px solid;
+    border-image: linear-gradient(to right,rgba(63, 100, 150),rgba(63, 100, 150,.8),transparent) 1;
+
+ }
+
+
+
+ @media(max-width:767px){
+     html{
+         font-size:14px;
+     }
+ }
