@@ -21,7 +21,7 @@ accordionItemHeaders.forEach(acc=>{
 
 
 
-        acc.classList.toggle("active")
+        acc.classList.toggle("active");
 
         const accItemBody=acc.nextElementSibling;
 

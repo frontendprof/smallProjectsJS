@@ -52,6 +52,7 @@
  .accordion-item-header::after{
 
      content:"\002B";
+     font-size: 2rem;
      position: absolute;
      right:2rem;
 
