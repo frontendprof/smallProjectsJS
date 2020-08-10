@@ -40,6 +40,35 @@ body{
 ul.currencies{
     height: 500px;
     background-color: #222;
+    padding:0 1.5rem 1rem 1.5rem;
+}
+
+ul.currencies li{
+    background-color: #2d2d37;
+    border-radius: 5px;
+    list-style: none;
+    padding: 1rem 1rem .75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+ul.currencies li:last-child{
+    margin-bottom: 0;
+}
+
+ul.currencies li.base-currency{
+    background-color: #264d73;
+}
+
+.flag{
+    width: 60px;
+    height: 40px;
+    border:1px solid #fff;
+    vertical-align: top;
+}
+
+
+.info{
+    display: inline-block;
 }
 
 .add-currency-btn{
