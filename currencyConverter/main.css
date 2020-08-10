@@ -31,7 +31,7 @@ body{
 }
 
 .date{
-    background-color: #222;
+    background-color: rgb(61,61,61);
     text-align: right;
     font-size: 1rem;
     padding: .75rem 2rem .75rem 0;
@@ -40,6 +40,54 @@ body{
 ul.currencies{
     height: 500px;
     background-color: #222;
+    padding:0 1.5rem 1rem 1.5rem;
+}
+
+ul.currencies li{
+    background-color: #2d2d37;
+    border-radius: 5px;
+    list-style: none;
+    padding: 1rem 1rem .75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+ul.currencies li:last-child{
+    margin-bottom: 0;
+}
+
+ul.currencies li.base-currency{
+    background-color: #264d73;
+}
+
+.flag{
+    width: 60px;
+    height: 40px;
+    border:1px solid #fff;
+    vertical-align: top;
+}
+
+
+.info{
+    display: inline-block;
+    width: 78%;
+}
+
+.info .input span{
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    text-align: center;
+}
+
+.info .input input{
+    font-size: 1.5rem;
+    width: 78%;
+    background-color: transparent;
+    border:2px solid #fff;
+    border-radius: 5px;
+    color:#fff;
+    padding: .3rem;
+    margin-bottom: .75rem;
 }
 
 .add-currency-btn{
