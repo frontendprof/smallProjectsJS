@@ -154,13 +154,13 @@ body {
     width: 100%;
     max-width: 960px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     text-transform: uppercase;
 }
 
 .pricing-plan {
-    border-bottom: 1px solid #e1f1ff;
+    border-bottom: 1px solid #f5290e;
 }
 
 .pricing-plan:last-child {
@@ -235,4 +235,20 @@ body {
 .pricing-button.is-featured:focus {
     background-color: #269aff;
     color: rgb(218, 182, 182);
+}
+
+@media (min-width:900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #d6dce0;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
